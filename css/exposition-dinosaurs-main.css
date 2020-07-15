@@ -1,0 +1,578 @@
+/*-> Large devices (desktops, larger than 1800) */
+/* ***************************           GLOBAL         ********************************** */
+* {
+  box-sizing: border-box !important;
+}
+/* ***************************           NAVBAR         ********************************** */
+.menu-item a::after {
+  border: #f9f6ef 1px solid;
+}
+/* ***************************         STICKY BAR       ********************************** */
+#Top_bar .container {
+  background-color: transparent;
+  z-index: 1;
+}
+#Top_bar {
+  border-bottom: 0px;
+  border-bottom-width: 0px;
+  border-bottom-style: initial;
+  border-bottom-color: initial;
+}
+#Top_bar.is-sticky .container {
+  background-color: #f9f6ef; /*eeeeee*/
+}
+
+/* ***************************           PAGE            ********************************** */
+.page-wrapper {
+  margin: -130px 0 0 0;
+}
+
+.page-content-wrapper {
+  padding: 0 30%;
+}
+/* ***************************           TITLE           ********************************** */
+.title-wrapper {
+  background-color: transparent;
+}
+.title-wrapper .title-first-part {
+  /* display: inline-block; */
+  /** Color */
+  /* background-color: dimgray; */
+  color: #f5fcca;
+  /** Box model properties */
+  margin: 0;
+  padding: 0;
+  /** Font properties */
+  font-family: obviously, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 45pt;
+  text-decoration: none;
+}
+.title-wrapper .title-second-part {
+  /* display: inline-block; */
+  /** Color */
+  /* background-color: firebrick; */
+  color: #f5fcca;
+  /** Box model properties */
+  margin: -10px 0 0 0;
+  padding: 0;
+  /** Font properties */
+  font-family: obviously, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80pt !important;
+  text-decoration: none;
+}
+.title-wrapper .title-third-part {
+  /* display: inline-block; */
+  /** Color */
+  /* background-color: goldenrod; */
+  color: #f5fcca;
+  /** Box model properties */
+  margin: 0;
+  padding: 0;
+  /** Font properties */
+  font-family: obviously, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40pt;
+  text-decoration: none;
+}
+/* ***************************           ENTRY           ********************************** */
+.entry-wrapper {
+  margin: 30px 0 !important;
+  /* background-color: crimson; */
+}
+.entry-wrapper .p-entry {
+  /** Color */
+  color: #f5fcca;
+  /** Box model properties */
+  margin: 0;
+  padding: 0;
+  /** Font properties */
+  font-family: open-sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 20pt;
+}
+/* ***************************          BLOG/POST         ********************************** */
+.blog-wrapper {
+  display: block;
+  /* background-color: deepskyblue; */
+}
+.blog-slider-wrapper {
+  display: none;
+  /* background-color: deepskyblue; */
+}
+.post-desc-wrapper {
+  background-color: #f9f6ef !important;
+}
+div.post-excerpt {
+  height: 200px;
+  overflow: scroll;
+  text-overflow: ellipsis;
+}
+
+/*-> Large devices (desktops, less than 1800) */
+@media (max-width: 1799px) {
+  /*less than 1800 ***************************           PAGE            ********************************** */
+  .page-content-wrapper {
+    padding: 0 20%;
+  }
+  /*less than 1800 ***************************           TITLE           ********************************** */
+  .title-wrapper {
+    background-color: transparent;
+  }
+  .title-wrapper .title-first-part {
+    /* display: inline-block; */
+    /** Color */
+    /* background-color: dimgray; */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: 0;
+    padding: 0;
+    /** Font properties */
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 45pt;
+    text-decoration: none;
+  }
+  .title-wrapper .title-second-part {
+    /* display: inline-block; */
+    /** Color */
+    /* background-color: firebrick; */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: -10px 0 0 0;
+    padding: 0;
+    /** Font properties */
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80pt !important;
+    text-decoration: none;
+  }
+  .title-wrapper .title-third-part {
+    /* display: inline-block; */
+    /** Color */
+    /* background-color: goldenrod; */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: 0;
+    padding: 0;
+    /** Font properties */
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40pt;
+    text-decoration: none;
+  }
+  /*less than 1800 ***************************           ENTRY           ********************************** */
+  .entry-wrapper {
+    margin: 30px 0 !important;
+    /* background-color: crimson; */
+  }
+  .entry-wrapper .p-entry {
+    /** Color */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: 0;
+    padding: 0;
+    /** Font properties */
+    font-family: open-sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 20pt;
+  }
+}
+/*-> Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  /*less than 1200 ***************************           PAGE            ********************************** */
+  .page-content-wrapper {
+    padding: 0 20%;
+  }
+  /*less than 1200 ***************************           TITLE           ********************************** */
+  .title-wrapper {
+    background-color: transparent;
+  }
+  .title-wrapper .title-first-part {
+    /* display: inline-block; */
+    /** Color */
+    /* background-color: dimgray; */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: 0;
+    padding: 0;
+    /** Font properties */
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 45pt;
+    text-decoration: none;
+  }
+  .title-wrapper .title-second-part {
+    /* display: inline-block; */
+    /** Color */
+    /* background-color: firebrick; */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: -10px 0 0 0;
+    padding: 0;
+    /** Font properties */
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80pt !important;
+    text-decoration: none;
+  }
+  .title-wrapper .title-third-part {
+    /* display: inline-block; */
+    /** Color */
+    /* background-color: goldenrod; */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: 0;
+    padding: 0;
+    /** Font properties */
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40pt;
+    text-decoration: none;
+  }
+  /*less than 1200 ***************************           ENTRY           ********************************** */
+  .entry-wrapper {
+    margin: 30px 0 !important;
+    /* background-color: crimson; */
+  }
+  .entry-wrapper .p-entry {
+    /** Color */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: 0;
+    padding: 0;
+    /** Font properties */
+    font-family: open-sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 20pt;
+  }
+}
+
+/*-> Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  /*less than 992 ***************************           PAGE            ********************************** */
+  .page-content-wrapper {
+    padding: 0 20%;
+  }
+  /*less than 992 ***************************           TITLE           ********************************** */
+  .title-wrapper {
+    background-color: transparent;
+  }
+  .title-wrapper .title-first-part {
+    /* display: inline-block; */
+    /** Color */
+    /* background-color: dimgray; */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: 0;
+    padding: 0;
+    /** Font properties */
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 45pt;
+    text-decoration: none;
+  }
+  .title-wrapper .title-second-part {
+    /* display: inline-block; */
+    /** Color */
+    /* background-color: firebrick; */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: -10px 0 0 0;
+    padding: 0;
+    /** Font properties */
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80pt !important;
+    text-decoration: none;
+  }
+  .title-wrapper .title-third-part {
+    /* display: inline-block; */
+    /** Color */
+    /* background-color: goldenrod; */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: 0;
+    padding: 0;
+    /** Font properties */
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40pt;
+    text-decoration: none;
+  }
+  /*less than 992 ***************************           ENTRY           ********************************** */
+  .entry-wrapper {
+    margin: 30px 0 !important;
+    /* background-color: crimson; */
+  }
+  .entry-wrapper .p-entry {
+    /** Color */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: 0;
+    padding: 0;
+    /** Font properties */
+    font-family: open-sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 20pt;
+  }
+}
+/*-> Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /*less than 768 ***************************           PAGE            ********************************** */
+  .page-content-wrapper {
+    padding: 0 20%;
+  }
+  /*less than 768 ***************************           TITLE           ********************************** */
+  .title-wrapper {
+    background-color: transparent;
+  }
+  .title-wrapper .title-first-part {
+    /* display: inline-block; */
+    /** Color */
+    /* background-color: dimgray; */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: 0;
+    padding: 0;
+    /** Font properties */
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 45pt;
+    text-decoration: none;
+  }
+  .title-wrapper .title-second-part {
+    /* display: inline-block; */
+    /** Color */
+    /* background-color: firebrick; */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: -10px 0 0 0;
+    padding: 0;
+    /** Font properties */
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80pt !important;
+    text-decoration: none;
+  }
+  .title-wrapper .title-third-part {
+    /* display: inline-block; */
+    /** Color */
+    /* background-color: goldenrod; */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: 0;
+    padding: 0;
+    /** Font properties */
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40pt;
+    text-decoration: none;
+  }
+  /*less than 768 ***************************           ENTRY           ********************************** */
+  .entry-wrapper {
+    margin: 30px 0 !important;
+    /* background-color: crimson; */
+  }
+  .entry-wrapper .p-entry {
+    /** Color */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: 0;
+    padding: 0;
+    /** Font properties */
+    font-family: open-sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 20pt;
+  }
+}
+/*-> Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /*less than 576 ***************************           PAGE            ********************************** */
+  .page-content-wrapper {
+    padding: 0 5%;
+  }
+  /*less than 576 ***************************           TITLE           ********************************** */
+  .title-wrapper {
+    background-color: red;
+  }
+  .title-wrapper .title-first-part {
+    /* display: inline-block; */
+    /** Color */
+    /* background-color: dimgray; */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: 0;
+    padding: 0;
+    /** Font properties */
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28pt;
+    text-decoration: none;
+  }
+  .title-wrapper .title-second-part {
+    /* display: inline-block; */
+    /** Color */
+    /* background-color: firebrick; */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: -10px 0 0 0;
+    padding: 0;
+    /** Font properties */
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50pt !important;
+    text-decoration: none;
+  }
+  .title-wrapper .title-third-part {
+    /* display: inline-block; */
+    /** Color */
+    /* background-color: goldenrod; */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: 0;
+    padding: 0;
+    /** Font properties */
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25pt;
+    text-decoration: none;
+  }
+  /*less than 576 ***************************           ENTRY           ********************************** */
+  .entry-wrapper {
+    margin: 30px 0 !important;
+    /* background-color: crimson; */
+  }
+  .entry-wrapper .p-entry {
+    /** Color */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: 0;
+    padding: 0;
+    /** Font properties */
+    font-family: open-sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 16pt;
+  }
+}
+/*-> Small devices (portrait phones, less than 472) */
+@media (max-width: 472px) {
+  /*less than 472px ***************************           PAGE            ********************************** */
+  .page-content-wrapper {
+    padding: 0 10%;
+  }
+  /*less than 472px ***************************           TITLE           ********************************** */
+  .title-wrapper {
+    background-color: transparent;
+  }
+  .title-wrapper .title-first-part {
+    /* display: inline-block; */
+    /** Color */
+    /* background-color: dimgray; */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: 0;
+    padding: 0;
+    /** Font properties */
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24pt;
+    text-decoration: none;
+  }
+  .title-wrapper .title-second-part {
+    /* display: inline-block; */
+    /** Color */
+    /* background-color: firebrick; */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: -10px 0 0 0;
+    padding: 0;
+    /** Font properties */
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30pt !important;
+    text-decoration: none;
+  }
+  .title-wrapper .title-third-part {
+    /* display: inline-block; */
+    /** Color */
+    /* background-color: goldenrod; */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: 0;
+    padding: 0;
+    /** Font properties */
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15pt;
+    text-decoration: none;
+  }
+  /*less than 472px ***************************           ENTRY           ********************************** */
+  .entry-wrapper {
+    margin: 30px 0 !important;
+    /* background-color: crimson; */
+  }
+  .entry-wrapper .p-entry {
+    /** Color */
+    color: #f5fcca;
+    /** Box model properties */
+    margin: 0;
+    padding: 0;
+    /** Font properties */
+    font-family: open-sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 14pt;
+  }
+  /* ***************************          BLOG/POST         ********************************** */
+  .blog-wrapper {
+    display: none;
+  }
+  .blog-slider-wrapper {
+    display: block;
+    background-color: rgba(245, 252, 202, 0.2);
+  }
+  #slick-slide00 > div {
+    margin: 0 !important;
+    position: relative;
+    padding: 0;
+  }
+  #slick-slide00 > div > div.image_frame.scale-with-grid {
+    margin: 10px !important;
+  }
+}
