@@ -1,0 +1,11 @@
+{
+  "liveServer.settings.port": 9003,
+  "liveServer.settings.root": "/",
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.https": {
+    "enable": true,
+    "cert": "/Users/parque/Documents/TecnologiasInteractivas/dinos/https/localhost.pem",
+    "key": "/Users/parque/Documents/TecnologiasInteractivas/dinos/https/localhost.key",
+    "passphrase": "alejo11rondon"
+  }
+}
