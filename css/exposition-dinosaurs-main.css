@@ -6,7 +6,7 @@
 
 /* ***************************           NAVBAR         ********************************** */
 .menu-item a::after {
-  border: blue 1px solid;
+  border: #f9f6ef 1px solid;
 }
 /* ***************************         STICKY BAR       ********************************** */
 #Top_bar .container {
@@ -33,7 +33,7 @@
 }
 /* ***************************           TITLE           ********************************** */
 .title-wrapper {
-  background-color: transparent;
+  background-color: blue;
 }
 .title-wrapper .title-first-part {
   /* display: inline-block; */
