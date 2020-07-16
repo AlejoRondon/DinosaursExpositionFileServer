@@ -6,7 +6,7 @@
 
 /* ***************************           NAVBAR         ********************************** */
 .menu-item a::after {
-  border: #f9f6ef 1px solid;
+  border: blue 1px solid;
 }
 /* ***************************         STICKY BAR       ********************************** */
 #Top_bar .container {
