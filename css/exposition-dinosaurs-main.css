@@ -23,6 +23,11 @@
 }
 /* ***************************           PAGE            ********************************** */
 .page-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(https://encasa.parqueexplora.org/wp-content/uploads/2020/07/EXPO_1920_1080.png) no-repeat right center fixed !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
   /** Testing color */
   /* background: red !important; */
   margin: -130px 0 0 0;
