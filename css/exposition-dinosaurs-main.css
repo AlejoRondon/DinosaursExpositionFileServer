@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box !important;
 }
+
 /* ***************************           NAVBAR         ********************************** */
 .menu-item a::after {
   border: #f9f6ef 1px solid;
