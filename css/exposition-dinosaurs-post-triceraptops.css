@@ -1,0 +1,863 @@
+/*-> Large devices (desktops, larger than 1800) */
+/* ***************************           GLOBAL         ********************************** */
+* {
+  box-sizing: border-box !important;
+}
+/* ***************************         STICKY BAR       ********************************** */
+#Top_bar {
+  border-bottom: 0px;
+  border-bottom-width: 0px;
+  border-bottom-style: initial;
+  border-bottom-color: initial;
+}
+#Top_bar .container {
+  background-color: transparent;
+  z-index: 1;
+}
+#Top_bar.is-sticky .container {
+  background-color: #f9f6ef;
+}
+/* ************************     FULLSCREEN HEADER IMAGE     ******************************* */
+.header-image {
+  width: 100vw;
+  height: 100vh;
+  margin-top: -100px;
+  padding: 0px;
+}
+.section-post-header {
+  /*Hiding empty space under the navbar */
+  display: none;
+}
+/* ***************************      ARTICLE SECTION        ********************************** */
+.article-section {
+  background-color: #f9f6ef;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.article-content-wrapper {
+  top: -60px; /* Removing parent margin */
+  margin: 0 !important;
+  padding: 0 10%;
+}
+/* ***************************           TITLE             ********************************** */
+.title-wrapper {
+  padding-bottom: 50px !important;
+}
+.title-wrapper .title-first-part {
+  color: #616633;
+  margin: 0;
+  padding: 0;
+  font-family: obviously, sans-serif !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 115pt !important;
+  text-decoration: none;
+}
+.title-wrapper .title-second-part {
+  color: #616633;
+  margin: -35px 0 15px 0;
+  padding: 0;
+  font-family: obviously, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 115pt;
+  text-decoration: none;
+}
+.title-wrapper .subtitle {
+  color: #616633;
+  font-family: obviously, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60pt;
+  text-decoration: none;
+}
+/* ***************************           ENTRY           ********************************** */
+.entry-text-wrapper {
+}
+p.p-column {
+  color: #616633 !important;
+  font-family: open-sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 24pt;
+}
+/* *******************           OUTSTANDING SECTION           ***************************** */
+.outstandings-section {
+}
+.outstanding-content-wrapper {
+  padding: 50px 10%;
+  margin: 10px 0;
+}
+.outstanding-p {
+  font-family: obviously, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.outstanding-img-left {
+  position: relative;
+  left: 15px;
+}
+.outstanding-p.outstanding-p-color3 {
+  font-size: 30pt;
+  text-align: center;
+  color: #3a1c01;
+  padding: 90px 0;
+}
+.outstanding-p.outstanding-p-color1 {
+  position: relative;
+  top: 100px;
+  left: -15px;
+  font-size: 28pt;
+  text-align: left;
+  color: #f5fcca;
+}
+.outstanding-p.outstanding-p-color2 {
+  font-size: 30pt;
+  text-align: center;
+  color: #f5fcca;
+  padding: 90px 0;
+}
+
+/* *******************           COLLAPSABLE           ***************************** */
+.collapsable-wrapper {
+  padding: 50px 0;
+}
+.collapsable-content-wrapper {
+  padding: 0 10%;
+}
+.collapsable-tab-container {
+  width: 100%;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  justify-content: center;
+  align-items: center;
+}
+.collapsable-tab-container.tempo {
+  background-color: #616633;
+}
+.collapsable-tab-container.location {
+  background-color: #f5fcca;
+}
+
+.collapsable-p {
+  font-family: obviously, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+.collapsable-p.collapsable-p-color2 {
+  font-size: 25pt;
+  text-align: left;
+  color: #616633;
+}
+.collapsable-p.collapsable-p-color1 {
+  font-size: 25pt;
+  text-align: center;
+  color: #f9f6ef;
+  padding: 5% 10%;
+}
+
+.collapsable-text-wrapper {
+}
+.collapsable-img-wrapper {
+}
+.collapsable-img-wrapper img {
+  width: 100%;
+  /* height: auto; */
+}
+
+/*-> Large devices (desktops, less than 1800) */
+@media (max-width: 1799.5px) {
+  /*less than 1800 ***************************      ARTICLE SECTION        ********************************** */
+  .article-section {
+  }
+  .article-content-wrapper {
+    padding: 0 10%;
+  }
+  /*less than 1800 ***************************           TITLE             ********************************** */
+  .title-wrapper {
+    padding-bottom: 0px !important;
+  }
+  .title-wrapper .title-first-part {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 73pt !important;
+  }
+  .title-wrapper .title-second-part {
+    margin: -20px 0 10px 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 73pt;
+  }
+  .title-wrapper .subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40pt;
+  }
+  /*less than 1800 ***************************           ENTRY           ********************************** */
+  .entry-text-wrapper {
+  }
+  p.p-column {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20pt;
+  }
+  /*less than 1800 *******************           OUTSTANDING SECTION           ***************************** */
+  .outstandings-section {
+  }
+  .outstanding-content-wrapper {
+    padding: 50px 10%;
+    margin: 10px 0;
+  }
+  .outstanding-p {
+  }
+
+  .outstanding-img-left {
+    position: relative;
+    left: 0px;
+  }
+  .outstanding-p.outstanding-p-color1 {
+    position: relative;
+    top: 70px;
+    left: 0px;
+    font-size: 18pt;
+    text-align: left;
+    color: #f5fcca;
+  }
+  .outstanding-p.outstanding-p-color2 {
+    font-size: 22pt;
+    text-align: center;
+    color: #616633;
+    padding: 90px 0;
+  }
+  .outstanding-p.outstanding-p-color3 {
+    font-size: 22pt;
+    text-align: center;
+    color: #f5fcca;
+    padding: 90px 0;
+  }
+
+  /*less than 1800 *******************           COLLAPSABLE           ***************************** */
+  .collapsable-wrapper {
+    padding: 50px 0;
+  }
+  .collapsable-content-wrapper {
+    padding: 0 10%;
+  }
+  .collapsable-tab-container {
+    width: 100%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    justify-content: center;
+    align-items: center;
+  }
+  .collapsable-tab-container.tempo {
+    background-color: #616633;
+  }
+  .collapsable-tab-container.location {
+    background-color: #f5fcca;
+  }
+
+  .collapsable-p {
+  }
+  .collapsable-p.collapsable-p-color1 {
+    font-size: 16pt;
+    text-align: left;
+    color: #f9f6ef;
+  }
+  .collapsable-p.collapsable-p-color2 {
+    font-size: 16pt;
+    text-align: left;
+    color: #616633;
+  }
+
+  .collapsable-text-wrapper {
+  }
+  .collapsable-img-wrapper {
+  }
+  .collapsable-img-wrapper img {
+  }
+}
+/*-> Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  /*less than 1200 ***************************      ARTICLE SECTION        ********************************** */
+  .article-section {
+  }
+  .article-content-wrapper {
+    padding: 0 10%;
+  }
+  /*less than 1200 ***************************           TITLE             ********************************** */
+  .title-wrapper {
+  }
+  .title-wrapper .title-first-part {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60pt !important;
+  }
+  .title-wrapper .title-second-part {
+    margin: -20px 0 0px 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60pt;
+  }
+  .title-wrapper .subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35pt;
+  }
+  /*less than 1200 ***************************           ENTRY           ********************************** */
+  .entry-text-wrapper {
+  }
+  p.p-column {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18pt;
+  }
+  /*less than 1200 *******************           OUTSTANDING SECTION           ***************************** */
+  .outstandings-section {
+  }
+  .outstanding-content-wrapper {
+    padding: 30px 10%;
+    margin: 5px 0;
+  }
+  .outstanding-p {
+  }
+
+  .outstanding-img-left {
+    position: relative;
+    left: 0px;
+  }
+  .outstanding-p.outstanding-p-color1 {
+    position: relative;
+    top: 60px;
+    left: 0px;
+    font-size: 15pt;
+    text-align: left;
+    color: #f5fcca;
+  }
+  .outstanding-p.outstanding-p-color2 {
+    font-size: 18pt;
+    text-align: center;
+    color: #616633;
+    padding: 50px 0;
+  }
+  .outstanding-p.outstanding-p-color3 {
+    font-size: 18pt;
+    text-align: center;
+    color: #f5fcca;
+    padding: 50px 0;
+  }
+
+  /*less than 1200 *******************           COLLAPSABLE           ***************************** */
+  .collapsable-wrapper {
+    padding: 50px 0;
+  }
+  .collapsable-content-wrapper {
+    padding: 0 10%;
+  }
+  .collapsable-tab-container {
+    width: 100%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    justify-content: center;
+    align-items: center;
+  }
+  .collapsable-tab-container.tempo {
+    background-color: #616633;
+  }
+  .collapsable-tab-container.location {
+    background-color: #f5fcca;
+  }
+
+  .collapsable-p {
+  }
+  .collapsable-p.collapsable-p-color1 {
+    font-size: 13pt;
+    text-align: left;
+    color: #f9f6ef;
+  }
+  .collapsable-p.collapsable-p-color2 {
+    font-size: 13pt;
+    text-align: left;
+    color: #616633;
+  }
+
+  .collapsable-text-wrapper {
+  }
+  .collapsable-img-wrapper {
+  }
+  .collapsable-img-wrapper img {
+    width: 100%;
+  }
+}
+/*-> Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  /*less than 992 ***************************      ARTICLE SECTION        ********************************** */
+  .article-section {
+  }
+  .article-content-wrapper {
+    padding: 0 10%;
+  }
+  /*less than 992 ***************************           TITLE             ********************************** */
+  .title-wrapper {
+  }
+  .title-wrapper .title-first-part {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45pt !important;
+  }
+  .title-wrapper .title-second-part {
+    margin: -20px 0 0px 0;
+    /* text-decoration: none; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45pt;
+  }
+  .title-wrapper .subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26pt;
+  }
+  /*less than 992 ***************************           ENTRY           ********************************** */
+  .entry-text-wrapper {
+  }
+  p.p-column {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17pt;
+  }
+  /*less than 992 *******************           OUTSTANDING SECTION           ***************************** */
+  .outstandings-section {
+  }
+  .outstanding-content-wrapper {
+    padding: 30px 10%;
+    margin: 5px 0;
+  }
+  .outstanding-p {
+  }
+
+  .outstanding-img-left {
+    position: relative;
+    left: 0px;
+  }
+  .outstanding-p.outstanding-p-color1 {
+    position: relative;
+    top: 25px;
+    left: 0px;
+    font-size: 12pt;
+    text-align: left;
+    color: #f5fcca;
+  }
+  .outstanding-p.outstanding-p-color2 {
+    font-size: 15pt;
+    text-align: center;
+    color: #616633;
+    padding: 50px 0;
+  }
+  .outstanding-p.outstanding-p-color3 {
+    font-size: 14pt;
+    text-align: center;
+    color: #f5fcca;
+    padding: 50px 0;
+  }
+
+  /*less than 992 *******************           COLLAPSABLE           ***************************** */
+  .collapsable-wrapper {
+    padding: 50px 0;
+  }
+  .collapsable-content-wrapper {
+    padding: 0 10%;
+  }
+  .collapsable-tab-container {
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    justify-content: center;
+    align-items: center;
+  }
+  .collapsable-tab-container.tempo {
+    background-color: #616633;
+  }
+  .collapsable-tab-container.location {
+    background-color: #f5fcca;
+  }
+
+  .collapsable-p {
+  }
+  .collapsable-p.collapsable-p-color1 {
+    font-size: 10pt;
+    text-align: left;
+    color: #f9f6ef;
+  }
+  .collapsable-p.collapsable-p-color2 {
+    font-size: 10pt;
+    text-align: left;
+    color: #616633;
+  }
+
+  .collapsable-text-wrapper {
+  }
+  .collapsable-img-wrapper {
+  }
+  .collapsable-img-wrapper img {
+    width: 100%;
+  }
+}
+/*-> Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /*less than 768 ***************************      ARTICLE SECTION        ********************************** */
+  .article-section {
+  }
+  .article-content-wrapper {
+    padding: 0 10%;
+  }
+  /*less than 768 ***************************           TITLE             ********************************** */
+  .title-wrapper {
+    padding-top: 20px !important;
+  }
+  .title-wrapper .title-first-part {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33pt !important;
+  }
+  .title-wrapper .title-second-part {
+    margin: -10px 0 -5px 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33pt;
+  }
+  .title-wrapper .subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21pt;
+  }
+  /*less than 768 ***************************           ENTRY           ********************************** */
+  .entry-text-wrapper {
+  }
+  p.p-column {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16pt;
+  }
+  /*less than 768 *******************           OUTSTANDING SECTION           ***************************** */
+  .outstandings-section {
+  }
+  .outstanding-content-wrapper {
+    padding: 30px 10%;
+    margin: 5px 0;
+  }
+  .outstanding-p {
+  }
+
+  .outstanding-img-left {
+    position: relative;
+    left: 0px;
+  }
+  .outstanding-p.outstanding-p-color1 {
+    position: relative;
+    top: 25px;
+    left: 0px;
+    font-size: 18pt;
+    text-align: left;
+    color: #f5fcca;
+  }
+  .outstanding-p.outstanding-p-color2 {
+    font-size: 18pt;
+    text-align: left;
+    color: #616633;
+    padding: 50px 0;
+  }
+  .outstanding-p.outstanding-p-color3 {
+    font-size: 18pt;
+    text-align: left;
+    color: #f5fcca;
+    padding: 50px 0;
+  }
+
+  /*less than 768 *******************           COLLAPSABLE           ***************************** */
+  .collapsable-wrapper {
+    padding: 50px 0;
+  }
+  .collapsable-content-wrapper {
+    padding: 0 10%;
+  }
+  .collapsable-tab-container {
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .collapsable-tab-container.tempo {
+    background-color: #616633;
+  }
+  .collapsable-tab-container.location {
+    background-color: #f5fcca;
+  }
+
+  .collapsable-p {
+  }
+  .collapsable-p.collapsable-p-color1 {
+    font-size: 10pt;
+    text-align: left;
+    color: #f9f6ef;
+  }
+  .collapsable-p.collapsable-p-color2 {
+    font-size: 10pt;
+    text-align: left;
+    color: #616633;
+  }
+
+  .collapsable-text-wrapper {
+  }
+  .collapsable-img-wrapper {
+  }
+  .collapsable-img-wrapper img {
+    width: 100%;
+    /* height: auto; */
+  }
+}
+/*-> Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /*less than 576 ***************************      ARTICLE SECTION        ********************************** */
+  .article-section {
+  }
+  .article-content-wrapper {
+    padding: 0 10%;
+  }
+  /*less than 576 ***************************           TITLE             ********************************** */
+  .title-wrapper {
+  }
+  .title-wrapper .title-first-part {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28pt !important;
+  }
+  .title-wrapper .title-second-part {
+    margin: -10px 0 -5px 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28pt;
+  }
+  .title-wrapper .subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17pt;
+  }
+  /*less than 576 ***************************           ENTRY           ********************************** */
+  .entry-text-wrapper {
+  }
+  p.p-column {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15pt;
+  }
+  /*less than 576 *******************           OUTSTANDING SECTION           ***************************** */
+  .outstandings-section {
+  }
+  .outstanding-content-wrapper {
+    padding: 30px 10%;
+    margin: 10px 0;
+  }
+  .outstanding-p {
+  }
+
+  .outstanding-img-left {
+    position: relative;
+    left: 0px;
+  }
+  .outstanding-p.outstanding-p-color1 {
+    position: relative;
+    top: 25px;
+    left: 0px;
+    font-size: 14pt;
+    text-align: left;
+    color: #f5fcca;
+  }
+  .outstanding-p.outstanding-p-color2 {
+    font-size: 14pt;
+    text-align: left;
+    color: #616633;
+    padding: 50px 0;
+  }
+  .outstanding-p.outstanding-p-color3 {
+    font-size: 14pt;
+    text-align: left;
+    color: #f5fcca;
+    padding: 50px 0;
+  }
+
+  /*less than 576 *******************           COLLAPSABLE           ***************************** */
+  .collapsable-wrapper {
+    padding: 50px 0;
+  }
+  .collapsable-content-wrapper {
+    padding: 0 10%;
+  }
+  .collapsable-tab-container {
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .collapsable-tab-container.tempo {
+    background-color: #616633;
+  }
+  .collapsable-tab-container.location {
+    background-color: #f5fcca;
+  }
+
+  .collapsable-p {
+  }
+  .collapsable-p.collapsable-p-color1 {
+    font-size: 10pt;
+    text-align: left;
+    color: #f9f6ef;
+  }
+  .collapsable-p.collapsable-p-color2 {
+    font-size: 10pt;
+    text-align: left;
+    color: #616633;
+  }
+
+  .collapsable-text-wrapper {
+  }
+  .collapsable-img-wrapper {
+  }
+  .collapsable-img-wrapper img {
+    width: 100%;
+  }
+}
+/*-> Small devices (portrait phones, less than 472) */
+@media (max-width: 471px) {
+  /*less than 472 ***************************      ARTICLE SECTION        ********************************** */
+  .article-section {
+  }
+  .article-content-wrapper {
+    padding: 0 10%;
+  }
+  /*less than 472 ***************************           TITLE             ********************************** */
+  .title-wrapper {
+  }
+  .title-wrapper .title-first-part {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21pt !important;
+  }
+  .title-wrapper .title-second-part {
+    margin: -2px 0 -5px 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21pt;
+  }
+  .title-wrapper .subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14pt;
+  }
+  /*less than 472 ***************************           ENTRY           ********************************** */
+  .entry-text-wrapper {
+  }
+  p.p-column {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13pt;
+  }
+  /*less than 472 *******************           OUTSTANDING SECTION           ***************************** */
+  .outstandings-section {
+  }
+  .outstanding-content-wrapper {
+    padding: 30px 10%;
+    margin: 10px 0;
+  }
+  .outstanding-p {
+  }
+
+  .outstanding-img-left {
+    position: relative;
+    left: 0px;
+  }
+  .outstanding-p.outstanding-p-color1 {
+    position: relative;
+    top: 25px;
+    left: 0px;
+    font-size: 12pt;
+    text-align: left;
+    color: #f5fcca;
+  }
+  .outstanding-p.outstanding-p-color2 {
+    font-size: 12pt;
+    text-align: left;
+    color: #616633;
+    padding: 50px 0;
+  }
+  .outstanding-p.outstanding-p-color3 {
+    font-size: 12pt;
+    text-align: left;
+    color: #f5fcca;
+    padding: 50px 0;
+  }
+
+  /*less than 472 *******************           COLLAPSABLE           ***************************** */
+  .collapsable-wrapper {
+    padding: 50px 0;
+  }
+  .collapsable-content-wrapper {
+    padding: 0 0;
+  }
+  .collapsable-tab-container {
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .collapsable-tab-container.tempo {
+    background-color: #616633;
+  }
+  .collapsable-tab-container.location {
+    background-color: #f5fcca;
+  }
+
+  .collapsable-p {
+  }
+  .collapsable-p.collapsable-p-color1 {
+    font-size: 10pt;
+    text-align: left;
+    color: #f9f6ef;
+  }
+  .collapsable-p.collapsable-p-color2 {
+    font-size: 10pt;
+    text-align: left;
+    color: #616633;
+  }
+
+  .collapsable-text-wrapper {
+  }
+  .collapsable-img-wrapper {
+  }
+  .collapsable-img-wrapper img {
+    width: 100%;
+  }
+}
+
+.question.active .answer {
+  margin: 0px !important;
+  padding: 0px !important;
+  background-color: #616633 !important;
+}
+
+.question .answer {
+}
+.blue {
+  /* background-color: cornflowerblue !important; */
+}

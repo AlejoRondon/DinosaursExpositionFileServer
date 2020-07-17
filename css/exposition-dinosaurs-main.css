@@ -109,7 +109,7 @@
   background-color: #f9f6ef !important;
 }
 div.post-excerpt {
-  height: 200px;
+  /* height: 200px; */
   overflow: scroll;
   text-overflow: ellipsis;
 }
@@ -344,7 +344,7 @@ div.post-excerpt {
     font-size: 14pt;
   }
   /*less than 576 ***************************          BLOG/POST         ********************************** */
-  .blog-wrapper {
+  /* .blog-wrapper {
     display: none;
   }
   .blog-slider-wrapper {
@@ -358,7 +358,7 @@ div.post-excerpt {
   }
   #slick-slide00 > div > div.image_frame.scale-with-grid {
     margin: 10px !important;
-  }
+  } */
 }
 /*-> Small devices (portrait phones, less than 472) */
 @media (max-width: 471px) {
