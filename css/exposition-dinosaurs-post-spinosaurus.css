@@ -822,7 +822,7 @@ p.p-column {
   }
 
   .article-content-wrapper {
-    padding: 0 0;
+    padding: 0 10%;
   }
   /*less than 472 ***************************           TITLE             ********************************** */
   .title-wrapper {
@@ -909,7 +909,7 @@ p.p-column {
     padding: 50px 0;
   }
   .collapsable-content-wrapper {
-    padding: 0 10%;
+    padding: 0 0;
   }
   .collapsable-tab-container {
     width: 100%;
