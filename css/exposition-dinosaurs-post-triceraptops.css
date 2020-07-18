@@ -46,22 +46,13 @@
 .title-wrapper .title-first-part {
   color: #616633;
   margin: 0;
-  padding: 0;
+  padding: 30px 0;
   font-family: obviously, sans-serif !important;
   font-style: normal;
   font-weight: 600;
-  font-size: 115pt !important;
+  font-size: 110pt !important;
   text-decoration: none;
-}
-.title-wrapper .title-second-part {
-  color: #616633;
-  margin: -35px 0 15px 0;
-  padding: 0;
-  font-family: obviously, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 115pt;
-  text-decoration: none;
+  line-height: 1;
 }
 .title-wrapper .subtitle {
   color: #616633;
@@ -97,7 +88,15 @@ p.p-column {
 
 .outstanding-img-left {
   position: relative;
-  left: 15px;
+  left: 0px;
+}
+.outstanding-p.outstanding-p-color1 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-size: 28pt;
+  text-align: left;
+  color: #f5fcca;
 }
 .outstanding-p.outstanding-p-color3 {
   font-size: 30pt;
@@ -105,14 +104,7 @@ p.p-column {
   color: #3a1c01;
   padding: 90px 0;
 }
-.outstanding-p.outstanding-p-color1 {
-  position: relative;
-  top: 100px;
-  left: -15px;
-  font-size: 28pt;
-  text-align: left;
-  color: #f5fcca;
-}
+
 .outstanding-p.outstanding-p-color2 {
   font-size: 30pt;
   text-align: center;
@@ -172,37 +164,48 @@ p.p-column {
 @media (max-width: 1799.5px) {
   /*less than 1800 ***************************      ARTICLE SECTION        ********************************** */
   .article-section {
+    background-color: #f9f6ef;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   .article-content-wrapper {
+    top: -60px; /* Removing parent margin */
+    margin: 0 !important;
     padding: 0 10%;
   }
   /*less than 1800 ***************************           TITLE             ********************************** */
   .title-wrapper {
-    padding-bottom: 0px !important;
+    padding-bottom: 50px !important;
   }
   .title-wrapper .title-first-part {
+    color: #616633;
+    margin: 0;
+    padding: 30px 0;
+    font-family: obviously, sans-serif !important;
     font-style: normal;
     font-weight: 600;
-    font-size: 73pt !important;
-  }
-  .title-wrapper .title-second-part {
-    margin: -20px 0 10px 0;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 73pt;
+    font-size: 85pt !important;
+    text-decoration: none;
+    line-height: 1;
   }
   .title-wrapper .subtitle {
+    color: #616633;
+    font-family: obviously, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 40pt;
+    font-size: 50pt;
+    text-decoration: none;
   }
   /*less than 1800 ***************************           ENTRY           ********************************** */
   .entry-text-wrapper {
   }
   p.p-column {
+    color: #616633 !important;
+    font-family: open-sans, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20pt;
+    text-decoration: none;
+    font-size: 17pt;
   }
   /*less than 1800 *******************           OUTSTANDING SECTION           ***************************** */
   .outstandings-section {
@@ -212,28 +215,32 @@ p.p-column {
     margin: 10px 0;
   }
   .outstanding-p {
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 500;
   }
 
+  .outstanding-p.outstanding-p-color3 {
+    font-size: 21pt;
+    text-align: center;
+    color: #3a1c01;
+    padding: 90px 0;
+  }
   .outstanding-img-left {
     position: relative;
     left: 0px;
   }
   .outstanding-p.outstanding-p-color1 {
     position: relative;
-    top: 70px;
+    top: 0px;
     left: 0px;
     font-size: 18pt;
     text-align: left;
     color: #f5fcca;
   }
+
   .outstanding-p.outstanding-p-color2 {
-    font-size: 22pt;
-    text-align: center;
-    color: #616633;
-    padding: 90px 0;
-  }
-  .outstanding-p.outstanding-p-color3 {
-    font-size: 22pt;
+    font-size: 21pt;
     text-align: center;
     color: #f5fcca;
     padding: 90px 0;
@@ -262,16 +269,20 @@ p.p-column {
   }
 
   .collapsable-p {
-  }
-  .collapsable-p.collapsable-p-color1 {
-    font-size: 16pt;
-    text-align: left;
-    color: #f9f6ef;
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 500;
   }
   .collapsable-p.collapsable-p-color2 {
-    font-size: 16pt;
+    font-size: 19pt;
     text-align: left;
     color: #616633;
+  }
+  .collapsable-p.collapsable-p-color1 {
+    font-size: 21pt;
+    text-align: center;
+    color: #f9f6ef;
+    padding: 5% 10%;
   }
 
   .collapsable-text-wrapper {
@@ -279,79 +290,97 @@ p.p-column {
   .collapsable-img-wrapper {
   }
   .collapsable-img-wrapper img {
+    width: 100%;
+    /* height: auto; */
   }
 }
 /*-> Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-  /*less than 1200 ***************************      ARTICLE SECTION        ********************************** */
+  /*less than 1800 ***************************      ARTICLE SECTION        ********************************** */
   .article-section {
+    background-color: #f9f6ef;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   .article-content-wrapper {
+    top: -60px; /* Removing parent margin */
+    margin: 0 !important;
     padding: 0 10%;
   }
-  /*less than 1200 ***************************           TITLE             ********************************** */
+  /*less than 1800 ***************************           TITLE             ********************************** */
   .title-wrapper {
+    padding-bottom: 50px !important;
   }
   .title-wrapper .title-first-part {
+    color: #616633;
+    margin: 0;
+    padding: 30px 0;
+    font-family: obviously, sans-serif !important;
     font-style: normal;
     font-weight: 600;
-    font-size: 60pt !important;
-  }
-  .title-wrapper .title-second-part {
-    margin: -20px 0 0px 0;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 60pt;
+    font-size: 70pt !important;
+    text-decoration: none;
+    line-height: 1;
   }
   .title-wrapper .subtitle {
+    color: #616633;
+    font-family: obviously, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 35pt;
+    font-size: 42pt;
+    text-decoration: none;
   }
-  /*less than 1200 ***************************           ENTRY           ********************************** */
+  /*less than 1800 ***************************           ENTRY           ********************************** */
   .entry-text-wrapper {
   }
   p.p-column {
+    color: #616633 !important;
+    font-family: open-sans, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18pt;
+    text-decoration: none;
+    font-size: 16pt;
   }
-  /*less than 1200 *******************           OUTSTANDING SECTION           ***************************** */
+  /*less than 1800 *******************           OUTSTANDING SECTION           ***************************** */
   .outstandings-section {
   }
   .outstanding-content-wrapper {
-    padding: 30px 10%;
-    margin: 5px 0;
+    padding: 50px 10%;
+    margin: 10px 0;
   }
   .outstanding-p {
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 500;
   }
 
+  .outstanding-p.outstanding-p-color3 {
+    font-size: 18pt;
+    text-align: center;
+    color: #3a1c01;
+    padding: 90px 0;
+  }
   .outstanding-img-left {
     position: relative;
     left: 0px;
   }
   .outstanding-p.outstanding-p-color1 {
     position: relative;
-    top: 60px;
+    top: 0px;
     left: 0px;
     font-size: 15pt;
     text-align: left;
     color: #f5fcca;
   }
+
   .outstanding-p.outstanding-p-color2 {
     font-size: 18pt;
     text-align: center;
-    color: #616633;
-    padding: 50px 0;
-  }
-  .outstanding-p.outstanding-p-color3 {
-    font-size: 18pt;
-    text-align: center;
     color: #f5fcca;
-    padding: 50px 0;
+    padding: 90px 0;
   }
 
-  /*less than 1200 *******************           COLLAPSABLE           ***************************** */
+  /*less than 1800 *******************           COLLAPSABLE           ***************************** */
   .collapsable-wrapper {
     padding: 50px 0;
   }
@@ -374,16 +403,20 @@ p.p-column {
   }
 
   .collapsable-p {
-  }
-  .collapsable-p.collapsable-p-color1 {
-    font-size: 13pt;
-    text-align: left;
-    color: #f9f6ef;
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 500;
   }
   .collapsable-p.collapsable-p-color2 {
-    font-size: 13pt;
+    font-size: 14pt;
     text-align: left;
     color: #616633;
+  }
+  .collapsable-p.collapsable-p-color1 {
+    font-size: 16pt;
+    text-align: center;
+    color: #f9f6ef;
+    padding: 5% 10%;
   }
 
   .collapsable-text-wrapper {
@@ -392,77 +425,93 @@ p.p-column {
   }
   .collapsable-img-wrapper img {
     width: 100%;
+    /* height: auto; */
   }
 }
 /*-> Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
   /*less than 992 ***************************      ARTICLE SECTION        ********************************** */
   .article-section {
+    background-color: #f9f6ef;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   .article-content-wrapper {
+    top: -60px; /* Removing parent margin */
+    margin: 0 !important;
     padding: 0 10%;
   }
   /*less than 992 ***************************           TITLE             ********************************** */
   .title-wrapper {
+    padding-bottom: 50px !important;
   }
   .title-wrapper .title-first-part {
+    color: #616633;
+    margin: 0;
+    padding: 30px 0;
+    font-family: obviously, sans-serif !important;
     font-style: normal;
     font-weight: 600;
-    font-size: 45pt !important;
-  }
-  .title-wrapper .title-second-part {
-    margin: -20px 0 0px 0;
-    /* text-decoration: none; */
-    font-style: normal;
-    font-weight: 600;
-    font-size: 45pt;
+    font-size: 56pt !important;
+    text-decoration: none;
+    line-height: 1;
   }
   .title-wrapper .subtitle {
+    color: #616633;
+    font-family: obviously, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 26pt;
+    font-size: 33pt;
+    text-decoration: none;
   }
   /*less than 992 ***************************           ENTRY           ********************************** */
   .entry-text-wrapper {
   }
   p.p-column {
+    color: #616633 !important;
+    font-family: open-sans, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 17pt;
+    text-decoration: none;
+    font-size: 14pt;
   }
   /*less than 992 *******************           OUTSTANDING SECTION           ***************************** */
   .outstandings-section {
   }
   .outstanding-content-wrapper {
-    padding: 30px 10%;
-    margin: 5px 0;
+    padding: 50px 10%;
+    margin: 10px 0;
   }
   .outstanding-p {
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 500;
   }
 
+  .outstanding-p.outstanding-p-color3 {
+    font-size: 14pt;
+    text-align: center;
+    color: #3a1c01;
+    padding: 90px 0;
+  }
   .outstanding-img-left {
     position: relative;
     left: 0px;
   }
   .outstanding-p.outstanding-p-color1 {
     position: relative;
-    top: 25px;
+    top: 0px;
     left: 0px;
     font-size: 12pt;
     text-align: left;
     color: #f5fcca;
   }
+
   .outstanding-p.outstanding-p-color2 {
-    font-size: 15pt;
-    text-align: center;
-    color: #616633;
-    padding: 50px 0;
-  }
-  .outstanding-p.outstanding-p-color3 {
     font-size: 14pt;
     text-align: center;
     color: #f5fcca;
-    padding: 50px 0;
+    padding: 90px 0;
   }
 
   /*less than 992 *******************           COLLAPSABLE           ***************************** */
@@ -474,7 +523,7 @@ p.p-column {
   }
   .collapsable-tab-container {
     width: 100%;
-    padding: 20px;
+    padding: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
     justify-content: center;
@@ -488,16 +537,20 @@ p.p-column {
   }
 
   .collapsable-p {
-  }
-  .collapsable-p.collapsable-p-color1 {
-    font-size: 10pt;
-    text-align: left;
-    color: #f9f6ef;
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 500;
   }
   .collapsable-p.collapsable-p-color2 {
-    font-size: 10pt;
+    font-size: 11pt;
     text-align: left;
     color: #616633;
+  }
+  .collapsable-p.collapsable-p-color1 {
+    font-size: 14pt;
+    text-align: center;
+    color: #f9f6ef;
+    padding: 5% 10%;
   }
 
   .collapsable-text-wrapper {
@@ -506,89 +559,113 @@ p.p-column {
   }
   .collapsable-img-wrapper img {
     width: 100%;
+    /* height: auto; */
   }
 }
 /*-> Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   /*less than 768 ***************************      ARTICLE SECTION        ********************************** */
   .article-section {
+    background-color: #f9f6ef;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   .article-content-wrapper {
+    top: -60px; /* Removing parent margin */
+    margin: 0 !important;
     padding: 0 10%;
   }
-  /*less than 768 ***************************           TITLE             ********************************** */
+  /*less than 992 ***************************           TITLE             ********************************** */
   .title-wrapper {
-    padding-top: 20px !important;
+    padding-bottom: 50px !important;
   }
   .title-wrapper .title-first-part {
+    color: #616633;
+    margin: 0;
+    padding: 30px 0;
+    font-family: obviously, sans-serif !important;
     font-style: normal;
     font-weight: 600;
-    font-size: 33pt !important;
-  }
-  .title-wrapper .title-second-part {
-    margin: -10px 0 -5px 0;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 33pt;
+    font-size: 41pt !important;
+    text-decoration: none;
+    line-height: 1;
   }
   .title-wrapper .subtitle {
+    color: #616633;
+    font-family: obviously, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 21pt;
+    font-size: 24pt;
+    text-decoration: none;
+    position: relative;
+    top: -30px;
   }
   /*less than 768 ***************************           ENTRY           ********************************** */
   .entry-text-wrapper {
+    position: relative;
+    top: -50px;
   }
   p.p-column {
+    color: #616633 !important;
+    font-family: open-sans, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16pt;
+    text-decoration: none;
+    font-size: 13pt;
   }
   /*less than 768 *******************           OUTSTANDING SECTION           ***************************** */
   .outstandings-section {
+    position: relative;
+    top: -110px;
   }
   .outstanding-content-wrapper {
-    padding: 30px 10%;
-    margin: 5px 0;
+    padding: 0px 7%;
+    margin: 10px 0;
   }
   .outstanding-p {
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 500;
   }
 
+  .outstanding-p.outstanding-p-color3 {
+    font-size: 12pt;
+    text-align: center;
+    color: #3a1c01;
+    padding: 90px 0;
+  }
   .outstanding-img-left {
     position: relative;
     left: 0px;
   }
   .outstanding-p.outstanding-p-color1 {
     position: relative;
-    top: 25px;
-    left: 0px;
-    font-size: 18pt;
+    top: 0px;
+    left: 40px;
+    font-size: 12pt;
     text-align: left;
     color: #f5fcca;
   }
+
   .outstanding-p.outstanding-p-color2 {
-    font-size: 18pt;
-    text-align: left;
-    color: #616633;
-    padding: 50px 0;
-  }
-  .outstanding-p.outstanding-p-color3 {
-    font-size: 18pt;
-    text-align: left;
+    font-size: 12pt;
+    text-align: center;
     color: #f5fcca;
-    padding: 50px 0;
+    padding: 90px 0;
   }
 
   /*less than 768 *******************           COLLAPSABLE           ***************************** */
   .collapsable-wrapper {
+    position: relative;
+    top: -110px;
     padding: 50px 0;
   }
   .collapsable-content-wrapper {
-    padding: 0 10%;
+    padding: 0;
   }
   .collapsable-tab-container {
     width: 100%;
-    padding: 20px;
+    padding: 25px;
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -602,16 +679,20 @@ p.p-column {
   }
 
   .collapsable-p {
-  }
-  .collapsable-p.collapsable-p-color1 {
-    font-size: 10pt;
-    text-align: left;
-    color: #f9f6ef;
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 500;
   }
   .collapsable-p.collapsable-p-color2 {
-    font-size: 10pt;
+    font-size: 12pt;
     text-align: left;
     color: #616633;
+  }
+  .collapsable-p.collapsable-p-color1 {
+    font-size: 12pt;
+    text-align: center;
+    color: #f9f6ef;
+    padding: 5% 10%;
   }
 
   .collapsable-text-wrapper {
@@ -627,82 +708,106 @@ p.p-column {
 @media (max-width: 575.98px) {
   /*less than 576 ***************************      ARTICLE SECTION        ********************************** */
   .article-section {
+    background-color: #f9f6ef;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   .article-content-wrapper {
+    top: -60px; /* Removing parent margin */
+    margin: 0 !important;
     padding: 0 10%;
   }
   /*less than 576 ***************************           TITLE             ********************************** */
   .title-wrapper {
+    padding-bottom: 50px !important;
   }
   .title-wrapper .title-first-part {
+    color: #616633;
+    margin: 0;
+    padding: 15px 0;
+    font-family: obviously, sans-serif !important;
     font-style: normal;
     font-weight: 600;
-    font-size: 28pt !important;
-  }
-  .title-wrapper .title-second-part {
-    margin: -10px 0 -5px 0;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28pt;
+    font-size: 35pt !important;
+    text-decoration: none;
+    line-height: 1;
   }
   .title-wrapper .subtitle {
+    color: #616633;
+    font-family: obviously, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 17pt;
+    font-size: 21pt;
+    text-decoration: none;
+    position: relative;
+    top: -24px;
   }
   /*less than 576 ***************************           ENTRY           ********************************** */
   .entry-text-wrapper {
+    position: relative;
+    top: -60px;
   }
   p.p-column {
+    color: #616633 !important;
+    font-family: open-sans, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 15pt;
+    text-decoration: none;
+    font-size: 12pt;
   }
   /*less than 576 *******************           OUTSTANDING SECTION           ***************************** */
   .outstandings-section {
+    position: relative;
+    top: -110px;
   }
   .outstanding-content-wrapper {
-    padding: 30px 10%;
+    padding: 0px 8%;
     margin: 10px 0;
   }
   .outstanding-p {
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 500;
   }
 
+  .outstanding-p.outstanding-p-color3 {
+    font-size: 12pt;
+    text-align: center;
+    color: #3a1c01;
+    padding: 90px 0;
+  }
   .outstanding-img-left {
     position: relative;
     left: 0px;
   }
   .outstanding-p.outstanding-p-color1 {
     position: relative;
-    top: 25px;
-    left: 0px;
-    font-size: 14pt;
+    top: 0px;
+    left: 36px;
+    font-size: 11pt;
     text-align: left;
     color: #f5fcca;
   }
+
   .outstanding-p.outstanding-p-color2 {
-    font-size: 14pt;
-    text-align: left;
-    color: #616633;
-    padding: 50px 0;
-  }
-  .outstanding-p.outstanding-p-color3 {
-    font-size: 14pt;
-    text-align: left;
+    font-size: 11pt;
+    text-align: center;
     color: #f5fcca;
-    padding: 50px 0;
+    padding: 90px 0;
   }
 
   /*less than 576 *******************           COLLAPSABLE           ***************************** */
   .collapsable-wrapper {
+    position: relative;
+    top: -120px;
     padding: 50px 0;
   }
   .collapsable-content-wrapper {
-    padding: 0 10%;
+    padding: 0;
   }
   .collapsable-tab-container {
     width: 100%;
-    padding: 20px;
+    padding: 25px;
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -716,16 +821,20 @@ p.p-column {
   }
 
   .collapsable-p {
-  }
-  .collapsable-p.collapsable-p-color1 {
-    font-size: 10pt;
-    text-align: left;
-    color: #f9f6ef;
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 500;
   }
   .collapsable-p.collapsable-p-color2 {
-    font-size: 10pt;
+    font-size: 12pt;
     text-align: left;
     color: #616633;
+  }
+  .collapsable-p.collapsable-p-color1 {
+    font-size: 12pt;
+    text-align: center;
+    color: #f9f6ef;
+    padding: 5% 10%;
   }
 
   .collapsable-text-wrapper {
@@ -734,88 +843,113 @@ p.p-column {
   }
   .collapsable-img-wrapper img {
     width: 100%;
+    /* height: auto; */
   }
 }
 /*-> Small devices (portrait phones, less than 472) */
 @media (max-width: 471px) {
   /*less than 472 ***************************      ARTICLE SECTION        ********************************** */
   .article-section {
+    background-color: #f9f6ef;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   .article-content-wrapper {
+    top: -60px; /* Removing parent margin */
+    margin: 0 !important;
     padding: 0 10%;
   }
   /*less than 472 ***************************           TITLE             ********************************** */
   .title-wrapper {
+    padding-bottom: 50px !important;
   }
   .title-wrapper .title-first-part {
+    color: #616633;
+    margin: 0;
+    padding: 15px 0;
+    font-family: obviously, sans-serif !important;
     font-style: normal;
     font-weight: 600;
-    font-size: 21pt !important;
-  }
-  .title-wrapper .title-second-part {
-    margin: -2px 0 -5px 0;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 21pt;
+    font-size: 27pt !important;
+    text-decoration: none;
+    line-height: 1;
   }
   .title-wrapper .subtitle {
+    color: #616633;
+    font-family: obviously, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 14pt;
+    font-size: 16pt;
+    text-decoration: none;
+    position: relative;
+    top: -30px;
   }
   /*less than 472 ***************************           ENTRY           ********************************** */
   .entry-text-wrapper {
+    position: relative;
+    top: -80px;
   }
   p.p-column {
+    color: #616633 !important;
+    font-family: open-sans, sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 13pt;
+    text-decoration: none;
+    font-size: 11pt;
   }
   /*less than 472 *******************           OUTSTANDING SECTION           ***************************** */
   .outstandings-section {
+    position: relative;
+    top: -130px;
   }
   .outstanding-content-wrapper {
-    padding: 30px 10%;
+    padding: 0px 10%;
     margin: 10px 0;
   }
   .outstanding-p {
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 500;
   }
 
+  .outstanding-p.outstanding-p-color3 {
+    font-size: 12pt;
+    text-align: center;
+    color: #3a1c01;
+    padding: 90px 0;
+  }
   .outstanding-img-left {
     position: relative;
     left: 0px;
   }
   .outstanding-p.outstanding-p-color1 {
     position: relative;
-    top: 25px;
-    left: 0px;
-    font-size: 12pt;
+    top: 0px;
+    left: 25px;
+    font-size: 11pt;
     text-align: left;
     color: #f5fcca;
   }
+
   .outstanding-p.outstanding-p-color2 {
-    font-size: 12pt;
-    text-align: left;
-    color: #616633;
-    padding: 50px 0;
-  }
-  .outstanding-p.outstanding-p-color3 {
-    font-size: 12pt;
-    text-align: left;
+    font-size: 11pt;
+    text-align: center;
     color: #f5fcca;
-    padding: 50px 0;
+    padding: 90px 0;
   }
 
   /*less than 472 *******************           COLLAPSABLE           ***************************** */
   .collapsable-wrapper {
+    position: relative;
+    top: -130px;
     padding: 50px 0;
   }
   .collapsable-content-wrapper {
-    padding: 0 0;
+    padding: 0;
   }
   .collapsable-tab-container {
     width: 100%;
-    padding: 20px;
+    padding: 25px;
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -829,16 +963,20 @@ p.p-column {
   }
 
   .collapsable-p {
-  }
-  .collapsable-p.collapsable-p-color1 {
-    font-size: 10pt;
-    text-align: left;
-    color: #f9f6ef;
+    font-family: obviously, sans-serif;
+    font-style: normal;
+    font-weight: 500;
   }
   .collapsable-p.collapsable-p-color2 {
-    font-size: 10pt;
+    font-size: 11pt;
     text-align: left;
     color: #616633;
+  }
+  .collapsable-p.collapsable-p-color1 {
+    font-size: 11pt;
+    text-align: center;
+    color: #f9f6ef;
+    padding: 5% 10%;
   }
 
   .collapsable-text-wrapper {
@@ -847,6 +985,7 @@ p.p-column {
   }
   .collapsable-img-wrapper img {
     width: 100%;
+    /* height: auto; */
   }
 }
 

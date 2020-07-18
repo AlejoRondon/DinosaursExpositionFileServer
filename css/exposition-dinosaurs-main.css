@@ -110,8 +110,8 @@
 }
 div.post-excerpt {
   /* height: 200px; */
-  overflow: scroll;
-  text-overflow: ellipsis;
+  /* overflow: scroll; */
+  /* text-overflow: ellipsis; */
 }
 
 /*-> Large devices (desktops, less than 1800) */
